@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Taylor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main class="container">
+        <h1 class="pageTitle">Ask Taylor Swift</h1>
+        <div class="blueSection">
+            <img src="img/saintTaylor.jpg" alt="saintTaylor" id="taylor">
+            <form onsubmit="ask()" class="form">
+                
+                    <label for="ask">Ask Taylor for advice </label>
+                    <textarea id="ask" name="ask" rows="6" cols="30" class="askArea"></textarea>
+                
+                <input type="submit" value="Ask" class="askButton" />
+            </form>
+            <div class="replyArea">
+                <h5>Mother says:</h5>
+                <p class="reply"></p>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+</body>
+</html>
