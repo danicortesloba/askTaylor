@@ -12,16 +12,15 @@
         <h1 class="pageTitle">Ask Taylor Swift</h1>
         <div class="blueSection">
             <img src="img/saintTaylor.jpg" alt="saintTaylor" id="taylor">
-            <form onsubmit="ask()" class="form">
+            <form onsubmit="askTaylor(event)" class="form">
                 
                     <label for="ask">Ask Taylor for advice </label>
                     <textarea id="ask" name="ask" rows="6" cols="30" class="askArea"></textarea>
                 
                 <input type="submit" value="Ask" class="askButton" />
             </form>
-            <div class="replyArea">
-                <h5>Mother says:</h5>
-                <p class="reply"></p>
+            <div id="replyContainer">
+
             </div>
 
         </div>
